@@ -1,0 +1,3 @@
+client-details: 
+    client-id: my-trusted-client
+    secret: secret
