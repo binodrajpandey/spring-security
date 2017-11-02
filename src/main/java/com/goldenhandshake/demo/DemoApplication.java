@@ -1,5 +1,7 @@
 package com.goldenhandshake.demo;
 
+import com.goldenhandshake.demo.entities.User;
+import com.goldenhandshake.demo.entities.Role;
 import java.util.Arrays;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;

@@ -1,10 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.goldenhandshake.demo;
 
+import com.goldenhandshake.demo.entities.User;
 import java.util.Arrays;
 import java.util.Base64;
 import java.util.LinkedHashMap;
@@ -32,6 +29,12 @@ public class ITUserController {
     
     private static final String BASE_URI="http://localhost:8080/";
     private static final String TOKEN_URI="oauth/token?grant_type=password&username=admin&password=admin";
+    
+     @Test
+    public  void testIt(){
+      User user=  getUSer(sendTokenRequest());
+       assertThat(user.getUsername(),is(equalTo("admin")));
+    }
     
     /**
      * prepare http headers
@@ -77,11 +80,7 @@ public class ITUserController {
         System.out.println("username= "+user.getUsername());
         return user;
     }
-    @Test
-    public  void testIt(){
-      User user=  getUSer(sendTokenRequest());
-       assertThat(user.getUsername(),is(equalTo("admin")));
-    }
+   
     
     
 }

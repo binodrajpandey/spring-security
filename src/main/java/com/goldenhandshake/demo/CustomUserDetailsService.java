@@ -5,6 +5,7 @@
  */
 package com.goldenhandshake.demo;
 
+import com.goldenhandshake.demo.entities.User;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;

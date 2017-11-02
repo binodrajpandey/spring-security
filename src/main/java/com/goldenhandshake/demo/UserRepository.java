@@ -5,6 +5,7 @@
  */
 package com.goldenhandshake.demo;
 
+import com.goldenhandshake.demo.entities.User;
 import java.io.Serializable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
